@@ -1,0 +1,50 @@
+<?php
+namespace AppBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * @ORM\Entity
+ * @ORM\Table(name="promocion")
+ * @ORM\Entity(repositoryClass="AppBundle\Entity\Repository\PromocionRepository")
+ */
+class Promocion
+{
+	/**
+	 * @ORM\Column(type="integer")
+	 * @ORM\Id
+	 * @ORM\GeneratedValue(strategy="AUTO")
+	 */
+	private $id;
+	
+	/**
+	 * @ORM\Column(type="string", length=255, nullable=false)
+	 */
+	private $nombre;
+	
+	/**
+	 * @ORM\Column(type="date", nullable=false)
+	 */
+	private $fechaPublicacion;
+	
+	/**
+	 * @ORM\Column(type="date", nullable=false)
+	 */
+	private $fechaVencimiento;
+	
+	/**
+	 * @ORM\Column(type="text", nullable=true)
+	 */
+	private $descripcion;
+	
+	/**
+	 * @ORM\Column(type="string", nullable=true)
+	 */
+	private $mensaje;
+	
+	/**
+	 * @ORM\Column(type="string", length=255, nullable=true)
+	 */
+	protected $imagen;
+	
+}

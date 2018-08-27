@@ -1,0 +1,17 @@
+	<section class="info">
+		<div class="container">
+			<div class="row">
+				{% for promocion in promociones %}
+				<div class="col-sm-3">
+					<div class="info-banner">
+						<figure>
+						    <img src="{{ promocion.webPath|thumb(214,163) }}" alt="">    
+						</figure>
+						<h3>{{ promocion.nombre }}</h3>
+						<p>{{ promocion.descripcion|nl2br }}</p>
+					</div>
+				</div>
+				{% endfor %}
+			</div>
+		</div>
+	</section>

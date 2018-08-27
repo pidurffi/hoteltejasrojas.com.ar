@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Hotel Tejas Rojas</title>
+	<!-- CSS -->
+	<link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+	<link href="stylesheets/fonts.css" media="screen, projection" rel="stylesheet" type="text/css" />
+	<link href="stylesheets/owl.carousel.css" media="screen, projection" rel="stylesheet" type="text/css" />
+	<link href="stylesheets/owl.transitions.css" media="screen, projection" rel="stylesheet" type="text/css" />
+	<link href="stylesheets/default-skin.css" media="screen, projection" rel="stylesheet" type="text/css" />
+	<link href="stylesheets/photoswipe.css" media="screen, projection" rel="stylesheet" type="text/css" />
+	<link href="stylesheets/classic.css" media="screen, projection" rel="stylesheet" type="text/css" />
+	<link href="stylesheets/classic.date.css" media="screen, projection" rel="stylesheet" type="text/css" />
+	<!-- FONTS -->
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700" rel="stylesheet">
+	<!-- JS -->
+	<script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+	<script type="text/javascript" src="js/functions.js"></script>
+	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="js/photoswipe.js"></script>
+	<script type="text/javascript" src="js/photoswipe-ui.js"></script>
+	<script type="text/javascript" src="js/scroll.js"></script>
+	<script type="text/javascript" src="js/picker.js"></script>
+	<script type="text/javascript" src="js/picker.date.js"></script>
+
+	<script src="https://maps.googleapis.com/maps/api/js"></script>
+	<script>
+	  function initialize() {
+		var isDraggable = $(document).width() > 480 ? true : false;  
+		var ispanControl = $(document).width() > 480 ? true : false;
+		var myLatLng = {lat: -37.323141, lng: -57.020792};
+		var marker = new google.maps.Marker({
+		   animation: google.maps.Animation.BOUNCE,
+		   position: myLatLng,
+		   title:"Solar Pampa"
+		});
+		var mapCanvas = document.getElementById('g-map');
+		var mapOptions = {
+		  center: new google.maps.LatLng(-37.323141, -57.020792),
+		  zoom: 15,
+		  mapTypeControl: true,
+		  panControl:ispanControl,
+		  draggable: isDraggable,
+		  scaleControl: true,
+		  streetViewControl: true,
+		  rotateControl: true,
+		  scrollwheel: false,
+		  mapTypeId: google.maps.MapTypeId.SATELLITE
+		}
+		var map = new google.maps.Map(mapCanvas, mapOptions);
+		marker.setMap(map);
+	  }
+	  
+	  google.maps.event.addDomListener(window, 'load', initialize);
+	</script>
+</head>
+
+<body>
+
+	<section class="intro" id="home">
+		<div class="social-bar">
+			<div class="container">
+				<ul>
+					<li>
+						<a>
+							<span class="icon-cel"></span>
+							<p>(02255) 46-2565 / 2221</p>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<span class="icon-google-plus"></span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<span class="icon-twitter"></span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<span class="icon-facebook"></span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<header>
+			<div class="container">
+				<button class="hamburger hamburger--spin" type="button">
+					<span class="hamburger-box">
+						<span class="hamburger-inner"></span>
+					</span>
+				</button>
+				<h1>
+					<a name="Hotel Tejas Rojas" data-scroll href="#home" class="logo" id="logo">Hotel Tejas Rojas</a>
+				</h1>
+				<nav class="nav">
+					<ul>
+						<li><a class="link-habitaciones" data-scroll href="#habitaciones">Habitaciones</a></li>
+						<li><a class="link-servicios" data-scroll href="#servicios">Servicios</a></li>
+						<li><a class="link-fotos" data-scroll href="#fotos">Fotos</a></li>
+						<li><a class="link-guarderia" data-scroll href="#guarderia">Guardería</a></li>
+						<li><a class="link-contacto" data-scroll href="#contacto">Contacto</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<div class="slider">
+			<div>
+				<div class="item item-1">
+					<span class="quote">Departamentos a estrenar de dos y tres ambientes, frente al mar</span>
+				</div>
+			</div>
+			<div>
+				<div class="item item-2">
+					<span class="quote">Habitaciones en planta alta con vista al mar</span>
+				</div>
+			</div>
+			<div>
+				<div class="item item-3">
+					<span class="quote">De cara al mar y cerca del centro comercial</span>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="info">
+		<div class="container">
+			<div class="row vertical-flex">
+				<div class="col-sm-9">
+					<span>Departamento de 2 ambientes</span>
+					<p>Para grupos familiares de 4 a 5 personas podemos ofrecerles habitaciones tipo departamento; con dos ambientes, cada uno con su TV LED, comunicados por una puerta y que comparten un mismo baño.</p>
+				</div>
+				<div class="col-sm-3">
+					<a href="">Reserva ahora</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="banners">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="item">
+						<h2>Hotel</h2>
+						<img src="images/banners/001.jpg" alt="">
+						<span>Mauris fermeum dictum magna</span>
+						<p>Mauris fermeum dictum magna. Sed loreet aliquam leote llus dolor dapibus eget elementum vel curs.</p>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="item">
+						<h2>Habitaciones</h2>
+						<img src="images/banners/002.jpg" alt="">
+						<span>Mauris fermeum dictum magna</span>
+						<p>Mauris fermeum dictum magna. Sed loreet aliquam leote llus dolor dapibus eget elementum vel curs.</p>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="item">
+						<h2>El bar</h2>
+						<img src="images/banners/003.jpg" alt="">
+						<span>Mauris fermeum dictum magna</span>
+						<p>Mauris fermeum dictum magna. Sed loreet aliquam leote llus dolor dapibus eget elementum vel curs.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="rooms" id="habitaciones">
+		<div class="container">
+			<h2>Las habitaciones</h2>
+			<p>Contamos con 7 tipos de habitaciones: Cuadruple, Departamento, Doble, Doble Twin, Quintuple, Single y Triple.</p>
+			<p>Las habitaciones cuentan con los siguientes servicios: TV LCD, ventilador de techo, aire acondicionado, teléfono, caja de seguridad, sommier, roomservice las 24 hs, calefacción, amenities, servicio de mucama, batas y toallas y ropla blanca.</p>
+			<div class="fotos">
+				<div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+					<div class="row">
+						<figure class="col-sm-4 mobile-thumb" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+							<a href="images/habitaciones/big/001.jpg" itemprop="contentUrl" data-size="800x600">
+								<img src="images/habitaciones/small/001.jpg" itemprop="thumbnail" alt="Image description" />
+								<span class="mobile-label">Ver galeria</span>
+							</a>
+						</figure>
+						<figure class="col-sm-4" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+							<a href="images/habitaciones/big/002.jpg" itemprop="contentUrl" data-size="800x600">
+								<img src="images/habitaciones/small/002.jpg" itemprop="thumbnail" alt="Image description" />
+							</a>
+						</figure>
+						<figure class="col-sm-4" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+							<a href="images/habitaciones/big/003.jpg" itemprop="contentUrl" data-size="800x600">
+								<img src="images/habitaciones/small/003.jpg" itemprop="thumbnail" alt="Image description" />
+							</a>
+						</figure>
+						<figure class="col-sm-4" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+							<a href="images/habitaciones/big/004.jpg" itemprop="contentUrl" data-size="800x600">
+								<img src="images/habitaciones/small/004.jpg" itemprop="thumbnail" alt="Image description" />
+							</a>
+						</figure>
+						<figure class="col-sm-4" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+							<a href="images/habitaciones/big/005.jpg" itemprop="contentUrl" data-size="800x600">
+								<img src="images/habitaciones/small/005.jpg" itemprop="thumbnail" alt="Image description" />
+							</a>
+						</figure>
+						<figure class="col-sm-4" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+							<a href="images/habitaciones/big/006.jpg" itemprop="contentUrl" data-size="800x600">
+								<img src="images/habitaciones/small/006.jpg" itemprop="thumbnail" alt="Image description" />
+							</a>
+						</figure>
+						<figure class="col-sm-4" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+							<a href="images/habitaciones/big/007.jpg" itemprop="contentUrl" data-size="800x600">
+								<img src="images/habitaciones/small/007.jpg" itemprop="thumbnail" alt="Image description" />
+							</a>
+						</figure>
+						<figure class="col-sm-4" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+							<a href="images/habitaciones/big/008.jpg" itemprop="contentUrl" data-size="800x600">
+								<img src="images/habitaciones/small/008.jpg" itemprop="thumbnail" alt="Image description" />
+							</a>
+						</figure>
+						<figure class="col-sm-4" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+							<a href="images/habitaciones/big/009.jpg" itemprop="contentUrl" data-size="800x600">
+								<img src="images/habitaciones/small/009.jpg" itemprop="thumbnail" alt="Image description" />
+							</a>
+						</figure>
+						<figure class="col-sm-4" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+							<a href="images/habitaciones/big/010.jpg" itemprop="contentUrl" data-size="800x600">
+								<img src="images/habitaciones/small/010.jpg" itemprop="thumbnail" alt="Image description" />
+							</a>
+						</figure>
+						<figure class="col-sm-4" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+							<a href="images/habitaciones/big/011.jpg" itemprop="contentUrl" data-size="800x600">
+								<img src="images/habitaciones/small/011.jpg" itemprop="thumbnail" alt="Image description" />
+							</a>
+						</figure>
+						<figure class="col-sm-4" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+							<a href="images/habitaciones/big/012.jpg" itemprop="contentUrl" data-size="800x600">
+								<img src="images/habitaciones/small/012.jpg" itemprop="thumbnail" alt="Image description" />
+							</a>
+						</figure>
+						<figure class="col-sm-4" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+							<a href="images/habitaciones/big/013.jpg" itemprop="contentUrl" data-size="800x600">
+								<img src="images/habitaciones/small/013.jpg" itemprop="thumbnail" alt="Image description" />
+							</a>
+						</figure>
+						<figure class="col-sm-4" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+							<a href="images/habitaciones/big/014.jpg" itemprop="contentUrl" data-size="800x600">
+								<img src="images/habitaciones/small/014.jpg" itemprop="thumbnail" alt="Image description" />
+							</a>
+						</figure>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="services" id="servicios">
+		<div class="container">
+			<h2>Nuestros servicios</h2>
+			<ul>
+				<li><span>&check;</span>Accesibilidad</li>
+				<li><span>&check;</span>Aire acondicionado</li>
+				<li><span>&check;</span>Amenities</li>
+				<li><span>&check;</span>Bañera</li>
+				<li><span>&check;</span>Baño completo</li>
+				<li><span>&check;</span>Baño privado</li>
+				<li><span>&check;</span>Bar</li>
+				<li><span>&check;</span>Cafetera</li>
+				<li><span>&check;</span>Caja de seguridad</li>
+				<li><span>&check;</span>Cancha de paddle</li>
+				<li><span>&check;</span>Calefacción Cochera</li>
+				<li><span>&check;</span>Confiteria</li>
+				<li><span>&check;</span>Cuna a pedido</li>
+				<li><span>&check;</span>Deck</li>
+				<li><span>&check;</span>Desayuno buffet</li>
+				<li><span>&check;</span>Diarios locales</li>
+				<li><span>&check;</span>Estacionamiento</li>
+				<li><span>&check;</span>Estacionamiento Semicubierto</li>
+				<li><span>&check;</span>Gay Friendly</li>
+				<li><span>&check;</span>Gimnasio</li>
+				<li><span>&check;</span>Guardavidas</li>
+				<li><span>&check;</span>Información turística</li>
+				<li><span>&check;</span>Internet por fibra óptica</li>
+				<li><span>&check;</span>Jacuzzi</li>
+				<li><span>&check;</span>Juegos de mesa</li>
+				<li><span>&check;</span>Juegos Infantiles</li>
+				<li><span>&check;</span>Lavanderia</li>
+				<li><span>&check;</span>Media pensión</li>
+				<li><span>&check;</span>Mucama en Habitacion</li>
+				<li><span>&check;</span>Musica funcional</li>
+				<li><span>&check;</span>Niñera (babysitter)</li>
+				<li><span>&check;</span>Parque</li>
+				<li><span>&check;</span>Piscina climatizada</li>
+				<li><span>&check;</span>Playroom</li>
+				<li><span>&check;</span>Restaurante</li>
+				<li><span>&check;</span>Resto-Bar</li>
+				<li><span>&check;</span>Roomservice 24hs</li>
+				<li><span>&check;</span>Ropa Blanca</li>
+				<li><span>&check;</span>Sauna</li>
+				<li><span>&check;</span>Secador de cabello</li>
+				<li><span>&check;</span>Seguridad</li>
+				<li><span>&check;</span>Servicio de Limpieza</li>
+				<li><span>&check;</span>Servicio de mucama</li>
+				<li><span>&check;</span>Solarium</li>
+				<li><span>&check;</span>Sombrillas</li>
+				<li><span>&check;</span>Sommier</li>
+				<li><span>&check;</span>Teléfono</li>
+				<li><span>&check;</span>TV cable</li>
+				<li><span>&check;</span>Tv LCD</li>
+				<li><span>&check;</span>Ventilador de techo</li>
+				<li><span>&check;</span>Vista al Mar</li>
+				<li><span>&check;</span>Wi-Fi</li>
+			</ul>
+		</div>
+	</section>
+
+	<section class="photo-gallery" id="fotos">
+		<div class="container">
+			<h2>El Hotel</h2>
+			<div class="fotos">
+				<div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+					<div class="row">
+						<figure class="col-sm-4 mobile-thumb" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+							<a href="images/hotel/big/001.jpg" itemprop="contentUrl" data-size="800x600">
+								<img src="images/hotel/small/001.jpg" itemprop="thumbnail" alt="Image description" />
+								<span class="mobile-label">Ver galeria</span>
+							</a>
+						</figure>
+						<figure class="col-sm-4" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+							<a href="images/hotel/big/002.jpg" itemprop="contentUrl" data-size="800x600">
+								<img src="images/hotel/small/002.jpg" itemprop="thumbnail" alt="Image description" />
+							</a>
+						</figure>
+						<figure class="col-sm-4" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+							<a href="images/hotel/big/003.jpg" itemprop="contentUrl" data-size="800x600">
+								<img src="images/hotel/small/003.jpg" itemprop="thumbnail" alt="Image description" />
+							</a>
+						</figure>
+						<figure class="col-sm-4" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+							<a href="images/hotel/big/004.jpg" itemprop="contentUrl" data-size="800x600">
+								<img src="images/hotel/small/004.jpg" itemprop="thumbnail" alt="Image description" />
+							</a>
+						</figure>
+						<figure class="col-sm-4" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+							<a href="images/hotel/big/005.jpg" itemprop="contentUrl" data-size="800x600">
+								<img src="images/hotel/small/005.jpg" itemprop="thumbnail" alt="Image description" />
+							</a>
+						</figure>
+						<figure class="col-sm-4" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+							<a href="images/hotel/big/006.jpg" itemprop="contentUrl" data-size="800x600">
+								<img src="images/hotel/small/006.jpg" itemprop="thumbnail" alt="Image description" />
+							</a>
+						</figure>
+						<figure class="col-sm-4" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+							<a href="images/hotel/big/007.jpg" itemprop="contentUrl" data-size="800x600">
+								<img src="images/hotel/small/007.jpg" itemprop="thumbnail" alt="Image description" />
+							</a>
+						</figure>
+						<figure class="col-sm-4" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+							<a href="images/hotel/big/008.jpg" itemprop="contentUrl" data-size="800x600">
+								<img src="images/hotel/small/008.jpg" itemprop="thumbnail" alt="Image description" />
+							</a>
+						</figure>
+						<figure class="col-sm-4" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+							<a href="images/hotel/big/009.jpg" itemprop="contentUrl" data-size="800x600">
+								<img src="images/hotel/small/009.jpg" itemprop="thumbnail" alt="Image description" />
+							</a>
+						</figure>
+						<figure class="col-sm-4" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+							<a href="images/hotel/big/010.jpg" itemprop="contentUrl" data-size="800x600">
+								<img src="images/hotel/small/010.jpg" itemprop="thumbnail" alt="Image description" />
+							</a>
+						</figure>
+						<figure class="col-sm-4" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+							<a href="images/hotel/big/011.jpg" itemprop="contentUrl" data-size="800x600">
+								<img src="images/hotel/small/011.jpg" itemprop="thumbnail" alt="Image description" />
+							</a>
+						</figure>
+						<figure class="col-sm-4" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+							<a href="images/hotel/big/012.jpg" itemprop="contentUrl" data-size="800x600">
+								<img src="images/hotel/small/012.jpg" itemprop="thumbnail" alt="Image description" />
+							</a>
+						</figure>
+						<figure class="col-sm-4" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+							<a href="images/hotel/big/013.jpg" itemprop="contentUrl" data-size="800x600">
+								<img src="images/hotel/small/013.jpg" itemprop="thumbnail" alt="Image description" />
+							</a>
+						</figure>
+						<figure class="col-sm-4" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+							<a href="images/hotel/big/014.jpg" itemprop="contentUrl" data-size="800x600">
+								<img src="images/hotel/small/014.jpg" itemprop="thumbnail" alt="Image description" />
+							</a>
+						</figure>
+						<figure class="col-sm-4" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+							<a href="images/hotel/big/015.jpg" itemprop="contentUrl" data-size="800x600">
+								<img src="images/hotel/small/015.jpg" itemprop="thumbnail" alt="Image description" />
+							</a>
+						</figure>
+						<figure class="col-sm-4" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+							<a href="images/hotel/big/016.jpg" itemprop="contentUrl" data-size="800x600">
+								<img src="images/hotel/small/016.jpg" itemprop="thumbnail" alt="Image description" />
+							</a>
+						</figure>
+						<figure class="col-sm-4" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+							<a href="images/hotel/big/017.jpg" itemprop="contentUrl" data-size="800x600">
+								<img src="images/hotel/small/017.jpg" itemprop="thumbnail" alt="Image description" />
+							</a>
+						</figure>
+						<figure class="col-sm-4" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+							<a href="images/hotel/big/018.jpg" itemprop="contentUrl" data-size="800x600">
+								<img src="images/hotel/small/018.jpg" itemprop="thumbnail" alt="Image description" />
+							</a>
+						</figure>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="kindergarten" id="guarderia">
+		<div class="container">
+			<h2>La guardería</h2>
+			<div class="fotos">
+				<div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+					<div class="row">
+						<figure class="col-sm-3 mobile-thumb" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+							<a href="images/kindergarten/big/001.jpg" itemprop="contentUrl" data-size="530x272">
+								<img src="images/kindergarten/small/001.jpg" itemprop="thumbnail" alt="Image description" />
+								<span class="mobile-label">Ver galeria</span>
+							</a>
+						</figure>
+						<figure class="col-sm-3" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+							<a href="images/kindergarten/big/002.jpg" itemprop="contentUrl" data-size="530x272">
+								<img src="images/kindergarten/small/002.jpg" itemprop="thumbnail" alt="Image description" />
+							</a>
+						</figure>
+						<figure class="col-sm-3" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+							<a href="images/kindergarten/big/003.jpg" itemprop="contentUrl" data-size="530x272">
+								<img src="images/kindergarten/small/003.jpg" itemprop="thumbnail" alt="Image description" />
+							</a>
+						</figure>
+						<figure class="col-sm-3" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+							<a href="images/kindergarten/big/004.jpg" itemprop="contentUrl" data-size="530x272">
+								<img src="images/kindergarten/small/004.jpg" itemprop="thumbnail" alt="Image description" />
+							</a>
+						</figure>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="contact" id="contacto">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6">
+					<h2>Contacto</h2>
+					<form action="">
+						<div class="row">
+							<div class="col-sm-12">
+								<input type="text" placeholder="Nombre y apellido">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-6">
+								<input type="text" placeholder="Mail">
+							</div>
+							<div class="col-sm-6">
+								<input type="text" placeholder="Teléfono">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-4">
+								<input type="text" class="datepicker-1" placeholder="Entrada">
+							</div>
+							<div class="col-sm-4">
+								<input type="text" class="datepicker-2" placeholder="Salida">
+							</div>
+							<div class="col-sm-4 vertical-flex">
+								<span>Personas</span>
+								<select name="" id="">
+									<option value="">2</option>
+									<option value="">3</option>
+									<option value="">4</option>
+									<option value="">5</option>
+								</select>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-12">
+								<textarea name="" id="" placeholder="Mensaje"></textarea>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-12 send">
+								<a href="">Enviar</a>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="col-sm-6">
+					<h2>Ubicación</h2>
+					<p class="contact-info"><b>(02255) 46.2565 / 2221</b> <br>Av.Costanera N&deg;848, Esquina Paseo 108 <br><a href="">info@hoteltejasrojas.com.ar</a> <br><b>Abierto durante:</b> Diciembre | Enero | Febrero | Marzo</p>
+					<div id="g-map"></div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<div class="container">
+			<p class="copy">&copy; 2017 Mar de las pampas TRAVEL</p>
+	</footer>
+
+	<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="pswp__bg"></div>
+		<div class="pswp__scroll-wrap">
+			<div class="pswp__container">
+				<div class="pswp__item"></div>
+				<div class="pswp__item"></div>
+				<div class="pswp__item"></div>
+			</div>
+			<div class="pswp__ui pswp__ui--hidden">
+				<div class="pswp__top-bar">
+					<div class="pswp__counter"></div>
+					<button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+					<button class="pswp__button pswp__button--share" title="Share"></button>
+					<button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+					<button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+					<div class="pswp__preloader">
+						<div class="pswp__preloader__icn">
+							<div class="pswp__preloader__cut">
+								<div class="pswp__preloader__donut"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+					<div class="pswp__share-tooltip"></div>
+				</div>
+				<button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+				<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+				<div class="pswp__caption">
+					<div class="pswp__caption__center"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+
+</html>

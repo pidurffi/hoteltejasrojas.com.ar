@@ -1,0 +1,60 @@
+{% extends "AppBundle::Sitio/layout.html.twig" %}
+
+{% block content %}
+
+	<section class="interna">
+		<div class="int-cover aparts">
+			<h2>Los Aparts</h2>
+		</div>
+		<div class="container">
+			<div class="title">
+				<div class="row">
+					<div class="col-sm-12">
+						<p>Si quiere más intimidad.... opte por los Aparts, concebidos para familias de dos, tres o cuatro personas....</p>
+						<p>Estan equipadas con:</p>
+					</div>
+					<div class="col-sm-6">
+						<ul>
+							<li><span class="icon-anafe"></span><span>Anafe eléctrico</span></li>
+							<li><span class="icon-microondas"></span><span>Microondas</span></li>
+							<li><span class="icon-tv"></span><span>LCD y DVD</span></li>
+							<li><span class="icon-minibar"></span><span>Heladera con freezer</span></li>
+							<li><span class="icon-vajilla"></span><span>Vajilla completa</span></li>
+							<li><span class="icon-parrilla"></span><span>Parrilla</span></li>
+							<li><span class="icon-calefaccion"></span><span>Calefacción</span></li>
+							<li><span class="icon-cama"></span><span>Colchón con sommier</span></li>
+							<li><span class="icon-secador"></span><span>Secador de pelo</span></li>
+							<li><span class="icon-room-service"></span><span>Room Service las 24hs</span></li>
+							<li><span class="icon-s-playa"></span><span>Servicio de playa</span></li>
+							<li><span class="icon-caja-seguridad"></span><span>Caja de seguridad</span></li>
+						</ul>
+					</div>
+					<div class="col-sm-6">
+						{{ render(controller('AppBundle:Default:galeria',{'galeria_id':2})) }}
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="contact">
+		<div class="container">
+			<div class="title">
+				<h2>Contacto</h2>
+			</div>
+			<div class="row">
+				<div class="col-sm-6">
+					<input type="text" placeholder="Nombre y apellido">
+					<input type="text" placeholder="Mail">
+					<input type="text" placeholder="Teléfono">
+				</div>
+				<div class="col-sm-6">
+					<textarea placeholder="Mensaje"></textarea>
+				</div>
+				<div class="col-sm-12 btn">
+					<a>Enviar</a>
+				</div>
+			</div>
+		</div>
+	</section>
+{% endblock %}

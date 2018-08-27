@@ -1,0 +1,15 @@
+			<strong>Nombre</strong>: {{ contacto.nombre }} <br />
+			<strong>Mail</strong>: {{ contacto.email }} <br />
+			<strong>Tel&eacute;fono</strong>: {{ contacto.telefono }} <br />
+			{% if contacto.fechaDesde %}
+			<strong>Fecha Entrada</strong>: {{ contacto.fechaDesde|date('d/m/Y') }} <br />
+			{% endif %} 
+			{% if contacto.fechaHasta %}
+			<strong>Fecha Salida</strong>: {{ contacto.fechaHasta|date('d/m/Y') }} <br />
+			{% endif %} 
+			{% if contacto.cantidadPersonas %}
+			<strong>Cantidad Pasajeros</strong>: {{ contacto.cantidadPersonas }} <br />
+			{% endif %} 
+			<strong>Mensaje</strong>:<br />
+			<p>{{ contacto.mensaje|nl2br }}</p>
+			

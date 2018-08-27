@@ -1,0 +1,18 @@
+# This file is auto-generated during the composer install
+parameters:
+    database_host: 127.0.0.1
+    database_port: null
+    database_name: hoteltej_db
+    database_user: hoteltej_user
+    database_password: bG8AWAN5cXHE  
+    mailer_transport: smtp
+    mailer_host: mail.hoteltejasrojas.com.ar
+    mailer_user: info+hoteltejasrojas.com.ar
+    mailer_password: 2udcBRQ94UuR
+    mailer_port: 26
+    secret: 681ec15606bf7b3b838c03ff3b86031b39cbeb7c
+    asunto_contacto: Contacto de _nombre_ desde www.hoteltejasrojas.com.ar/
+    contacto_from: info+hoteltejasrojas.com.ar
+    contacto_to: hmolinari@gmail.com
+#   contacto_to: info+hoteltejasrojas.com.ar
+    

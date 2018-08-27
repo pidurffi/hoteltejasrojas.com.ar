@@ -1,0 +1,1 @@
+php ../../../../bin/console assets:install ../../../../public_html

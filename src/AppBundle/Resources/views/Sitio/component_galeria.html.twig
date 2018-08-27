@@ -1,0 +1,24 @@
+{% if galeria.id == 1 %}
+    {% for gal in galeria.galeria %}
+        <div class="item">
+            <img src="{{ asset('/uploads/galerias/gallery/') }}{{ gal }}" />
+        </div>
+	{% endfor %}
+{% else %}
+<div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+	<div class="row">
+		{% set primero = true %}
+		{% for gal in galeria.galeria %}
+		<figure class="col-sm-3 {% if primero %}mobile-thumb{% endif %}" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+			<a href="{{ asset('/uploads/galerias/gallery/') }}{{ gal }}" itemprop="contentUrl" data-size="800x600">
+				<img src="{{ asset('/uploads/galerias/') }}{{ gal|gallery_thumb(300,225) }}" itemprop="thumbnail" alt="Image description" />
+				{% if primero %}
+					{% set primero = false %}
+					<span class="mobile-label">Ver galer&iacute;a</span>
+				{% endif %}
+			</a>
+		</figure>
+		{% endfor %}
+	</div>
+</div>
+{% endif %}

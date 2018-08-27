@@ -1,0 +1,30 @@
+<?php
+namespace AppBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * @ORM\Entity
+ * @ORM\Table(name="galeria")
+ * @ORM\Entity(repositoryClass="AppBundle\Entity\Repository\GaleriaRepository")
+ */
+class Galeria {
+	/**
+	 * @ORM\Column(type="integer")
+	 * @ORM\Id
+	 * @ORM\GeneratedValue(strategy="AUTO")
+	 */
+	private $id;
+	
+	/**
+	 * @ORM\Column(type="string", length=255, nullable=false)
+	 */
+	private $nombre;
+	
+	/**
+	 * @ORM\Column(type="array", nullable=true)
+	 */
+	protected $galeria;
+	
+	
+}

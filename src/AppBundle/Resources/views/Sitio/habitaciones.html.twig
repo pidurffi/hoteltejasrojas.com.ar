@@ -1,0 +1,58 @@
+{% extends "AppBundle::Sitio/layout.html.twig" %}
+
+{% block content %}
+
+	<section class="interna">
+		<div class="int-cover habitaciones">
+			<h2>Las Habitaciones</h2>
+		</div>
+		<div class="container">
+			<div class="title">
+				<div class="row">
+					<div class="col-sm-12">
+						<p>Todas las habitaciones están rodeadas de bosque y su particular tranquilidad. Las habitaciones en planta baja tienen un deck privador y reposeras con salida al bosque.</p>
+						<p>Las habitaciones en planta alta tienen un balcón con vista al bosque. Todas las habitaciones cuentan con:</p>
+					</div>
+					<div class="col-sm-6">
+						<ul>
+							<li><span class="icon-tv"></span><span>LCD y DVD</span></li>
+							<li><span class="icon-minibar"></span><span>Frigobar</span></li>
+							<li><span class="icon-calefaccion"></span><span>Calefacción</span></li>
+							<li><span class="icon-cama"></span><span>Colchón con sommier</span></li>
+							<li><span class="icon-hidro"></span><span>Hidromasaje en las de ca</span>lidad superior</li>
+							<li><span class="icon-balcon"></span><span>Balcón</span></li>
+							<li><span class="icon-secador"></span><span>Secador de pelo</span></li>
+							<li><span class="icon-room-service"></span><span>Room Service las 24hs</span></li>
+							<li><span class="icon-s-playa"></span><span>Servicio de playa</span></li>
+							<li><span class="icon-caja-seguridad"></span><span>Caja de seguridad</span></li>
+						</ul>
+					</div>
+					<div class="col-sm-6">
+						{{ render(controller('AppBundle:Default:galeria',{'galeria_id':1})) }}
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="contact">
+		<div class="container">
+			<div class="title">
+				<h2>Contacto</h2>
+			</div>
+			<div class="row">
+				<div class="col-sm-6">
+					<input type="text" placeholder="Nombre y apellido">
+					<input type="text" placeholder="Mail">
+					<input type="text" placeholder="Teléfono">
+				</div>
+				<div class="col-sm-6">
+					<textarea placeholder="Mensaje"></textarea>
+				</div>
+				<div class="col-sm-12 btn">
+					<a>Enviar</a>
+				</div>
+			</div>
+		</div>
+	</section>
+{% endblock %}

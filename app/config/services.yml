@@ -1,0 +1,16 @@
+# Learn more about services, parameters and containers at
+# http://symfony.com/doc/current/book/service_container.html
+parameters:
+#    parameter_name: value
+
+services:
+#    service_name:
+#        class: AppBundle\Directory\ClassName
+#        arguments: ["@another_service_name", "plain_value", "%parameter_name%"]
+#    comur.twig.twig_extension:
+#        class: Comur\ImageBundle\Twig\ThumbExtension
+#        arguments:  ["cropped33","thumbnails","@service_container","public_html","asd","/uploads/galerias/gallery"]
+        #$croppedDir, $thumbsDir, $container, $webDirName, $transDomain, $galleryDir)
+#        public: false
+#        tags:
+#            - { name: comur_thumb_extension }            

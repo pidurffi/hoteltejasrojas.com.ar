@@ -1,0 +1,513 @@
+{% extends "AppBundle::Sitio/layout.html.twig" %}
+
+{% block content %}
+
+	{{ render(controller('AppBundle:Default:promociones')) }}
+
+	<section class="ficha" id="ficha">
+		<div class="container">
+		    <h2>Las Habitaciones</h2>
+		    <div class="row">
+		        <div class="col-lg-6">
+                    <div class="ficha-carousel owl-carousel owl-theme">
+						{{ render(controller('AppBundle:Default:galeria',{galeria_id: 1})) }}
+                    </div>
+                    {#<div class="ficha-destacado">
+                        <ul class="lista-destacada">
+                            <li><i class="fas fa-home"></i> 1 ambiente</li>
+                            <li><i class="fas fa-user"></i> Dos personas y un bebé</li>
+                        </ul>
+                        <ul>
+                            <li>Sommier King</li>
+                            <li>TV por cable</li>
+                            <li>Frigobar</li>
+                            <li>Pava eléctrica</li>
+                            <li>Baño completo</li>
+                            <li>Espacio para estacionar descubierto</li>
+                        </ul>
+                    </div>#}
+                </div>
+                <div class="col-lg-6">
+                    <p>Contamos con 7 tipos de habitaciones:</p>
+                    <ul class="main-list">
+                        <li><i class="fas fa-check-circle"></i> Cuadruple</li>
+                        <li><i class="fas fa-check-circle"></i> Departamento</li>
+                        <li><i class="fas fa-check-circle"></i> Doble</li>
+                        <li><i class="fas fa-check-circle"></i> Doble Twin</li>
+                        <li><i class="fas fa-check-circle"></i> Quintuple</li>
+                        <li><i class="fas fa-check-circle"></i> Single</li>
+                        <li><i class="fas fa-check-circle"></i> Triple</li>
+                    </ul>
+                    <p>Las habitaciones cuentan con los siguientes servicios:</p>
+                    <ul class="main-list">
+                        <li><i class="fas fa-check-circle"></i> TV LCD</li>
+                        <li><i class="fas fa-check-circle"></i> Ventilador de techo</li>
+                        <li><i class="fas fa-check-circle"></i> Aire acondicionado</li>
+                        <li><i class="fas fa-check-circle"></i> Teléfono</li>
+                        <li><i class="fas fa-check-circle"></i> Caja de seguridad</li>
+                        <li><i class="fas fa-check-circle"></i> Sommier</li>
+                        <li><i class="fas fa-check-circle"></i> Roomservice las 24 hs</li>
+                        <li><i class="fas fa-check-circle"></i> Calefacción</li>
+                        <li><i class="fas fa-check-circle"></i> Aminities</li>
+                        <li><i class="fas fa-check-circle"></i> Servicio de mucama</li>
+                        <li><i class="fas fa-check-circle"></i> Batas y toallas</li>
+                        <li><i class="fas fa-check-circle"></i> Ropa Blanca</li>
+                    </ul>
+                </div>
+		    </div>
+		</div>
+	</section>
+
+	<section class="services" id="servicios">
+		<div class="container">
+			<h2>Nuestros servicios</h2>
+			<ul>
+				<li><span>&check;</span>Accesibilidad</li>
+				<li><span>&check;</span>Aire acondicionado</li>
+				<li><span>&check;</span>Amenities</li>
+				<li><span>&check;</span>Bañera</li>
+				<li><span>&check;</span>Baño completo</li>
+				<li><span>&check;</span>Baño privado</li>
+				<li><span>&check;</span>Bar</li>
+				<li><span>&check;</span>Cafetera</li>
+				<li><span>&check;</span>Caja de seguridad</li>
+				<li><span>&check;</span>Cancha de paddle</li>
+				<li><span>&check;</span>Calefacción Cochera</li>
+				<li><span>&check;</span>Confiteria</li>
+				<li><span>&check;</span>Cuna a pedido</li>
+				<li><span>&check;</span>Deck</li>
+				<li><span>&check;</span>Desayuno buffet</li>
+				<li><span>&check;</span>Diarios locales</li>
+				<li><span>&check;</span>Estacionamiento</li>
+				<li><span>&check;</span>Estacionamiento Semicubierto</li>
+				<li><span>&check;</span>Gay Friendly</li>
+				<li><span>&check;</span>Gimnasio</li>
+				<li><span>&check;</span>Guardavidas</li>
+				<li><span>&check;</span>Información turística</li>
+				<li><span>&check;</span>Internet por fibra óptica</li>
+				<li><span>&check;</span>Jacuzzi</li>
+				<li><span>&check;</span>Juegos de mesa</li>
+				<li><span>&check;</span>Juegos Infantiles</li>
+				<li><span>&check;</span>Lavanderia</li>
+				<li><span>&check;</span>Media pensión</li>
+				<li><span>&check;</span>Mucama en Habitacion</li>
+				<li><span>&check;</span>Musica funcional</li>
+				<li><span>&check;</span>Niñera (babysitter)</li>
+				<li><span>&check;</span>Parque</li>
+				<li><span>&check;</span>Piscina climatizada</li>
+				<li><span>&check;</span>Playroom</li>
+				<li><span>&check;</span>Restaurante</li>
+				<li><span>&check;</span>Resto-Bar</li>
+				<li><span>&check;</span>Roomservice 24hs</li>
+				<li><span>&check;</span>Ropa Blanca</li>
+				<li><span>&check;</span>Sauna</li>
+				<li><span>&check;</span>Secador de cabello</li>
+				<li><span>&check;</span>Seguridad</li>
+				<li><span>&check;</span>Servicio de Limpieza</li>
+				<li><span>&check;</span>Servicio de mucama</li>
+				<li><span>&check;</span>Solarium</li>
+				<li><span>&check;</span>Sombrillas</li>
+				<li><span>&check;</span>Sommier</li>
+				<li><span>&check;</span>Teléfono</li>
+				<li><span>&check;</span>TV cable</li>
+				<li><span>&check;</span>Tv LCD</li>
+				<li><span>&check;</span>Ventilador de techo</li>
+				<li><span>&check;</span>Vista al Mar</li>
+				<li><span>&check;</span>Wi-Fi</li>
+			</ul>
+		</div>
+	</section>
+
+	<section class="photo-gallery" id="fotos">
+		<div class="container">
+			<h2>El Hotel</h2>
+			<div class="fotos">
+				{{ render(controller('AppBundle:Default:galeria',{galeria_id:  2 })) }}
+			</div>
+		</div>
+	</section>
+
+	<section class="kindergarten" id="guarderia">
+		<div class="container">
+			<h2>La guardería</h2>
+			<div class="fotos">
+			    <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+					<div class="row">
+						<figure class="col-sm-3 mobile-thumb" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+							<a href="/uploads/guarderia/001B.jpg" itemprop="contentUrl" data-size="530x272">
+								<img src="/uploads/guarderia/001S.jpg" itemprop="thumbnail" alt="Image description" />
+								<span class="mobile-label">Ver galeria</span>
+							</a>
+						</figure>
+						<figure class="col-sm-3" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+							<a href="/uploads/guarderia/002B.jpg" itemprop="contentUrl" data-size="530x272">
+								<img src="/uploads/guarderia/002S.jpg" itemprop="thumbnail" alt="Image description" />
+							</a>
+						</figure>
+						<figure class="col-sm-3" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+							<a href="/uploads/guarderia/003B.jpg" itemprop="contentUrl" data-size="530x272">
+								<img src="/uploads/guarderia/003S.jpg" itemprop="thumbnail" alt="Image description" />
+							</a>
+						</figure>
+						<figure class="col-sm-3" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+							<a href="/uploads/guarderia/004B.jpg" itemprop="contentUrl" data-size="530x272">
+								<img src="/uploads/guarderia/004S.jpg" itemprop="thumbnail" alt="Image description" />
+							</a>
+						</figure>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="contact" id="contacto">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6">
+					<h2>Contacto</h2>
+					<form id="form_contacto" method="post" onsubmit="return validar_form();">
+						<div class="row">
+							<div class="col-sm-12">
+								<input type="text" placeholder="Nombre y apellido" required="required" id="form_nombre">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-6">
+								<input type="text" placeholder="Mail" required="required" id="form_email">
+							</div>
+							<div class="col-sm-6">
+								<input type="text" placeholder="Teléfono" required="required" id="form_telefono">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-4">
+								<input type="text" class="datepicker-1" id="fecha-desde" placeholder="Entrada">
+							</div>
+							<div class="col-sm-4">
+								<input type="text" class="datepicker-2" id="fecha-hasta" placeholder="Salida">
+							</div>
+							<div class="col-sm-4 vertical-flex">
+								<span>Personas</span>
+								<select name="" id="personas">
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+								</select>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-12">
+								<textarea name="" placeholder="Mensaje" id="form_mensaje"></textarea>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-12 send">
+								<a class="send">Enviar</a>
+                					<div class="spinner" id="form_img_loading">
+                						<div class="rect1"></div>
+                						<div class="rect2"></div>
+                						<div class="rect3"></div>
+                						<div class="rect4"></div>
+                						<div class="rect5"></div>
+                					</div>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="col-sm-6">
+					<h2>Ubicación</h2>
+					<p class="contact-info"><b>(02255) 46.2565 / 2221</b> <br>Av.Costanera N&deg;848, Esquina Paseo 108 <br><a href="">info@hoteltejasrojas.com.ar</a> <br><b>Abierto durante:</b> Diciembre | Enero | Febrero | Marzo</p>
+					<div id="g-map"></div>
+				</div>
+			</div>
+		</div>
+	</section>
+{% endblock %}
+
+{% block contenta %}
+	<div class="slider-wrapper">
+		<div class="slider">
+			<img src="{{ asset('bundles/app/images/slider/01.jpg')}}" alt="">
+			<img src="{{ asset('bundles/app/images/slider/02.jpg')}}" alt="">
+			<img src="{{ asset('bundles/app/images/slider/03.jpg')}}" alt="">
+		</div>
+		<span class="icon-arrow-down"></span>
+	</div>
+
+	{{ render(controller('AppBundle:Default:promociones')) }}
+	
+	<section class="us" id="us">
+		<div class="container">
+			<h3>La Mansión del Bosque - Hotel Spa &amp; Aparts</h3>
+			<p>Entre el mar y bosque marpampeano se encuentra La Mansión del Bosque que fue construída respetando la armonía del entorno, con amplios jardines y zonas de relax que hacen del hotel un lugar único y acogedor. Apenas a unos 150 mts de la playa y unos 200 del pintoresco centro comercial.</p>
+			<p>El hotel cuenta con 18 habitaciones equipadas con lcd, cajas de seguridad, amenities, wifi, algunas con hidro, otras con deck privado o balcón y 4 unidades de apart equipadas con kitchinette, anafe eléctrico, microondas, heladera con freezer, vajilla completa, cajas de seguridad, wifi, amenities, parrillas. Se aceptan mascotas con un costo adicional únicamente en las unidades de apart.</p>
+			<p>Todas las unidades y habitaciones cuentan con vista y están rodeadas del más puro bosque con los servicios más atractivos para descansar de la rutina o simplemente regalarse el tiempo de conectar con la naturaleza y encantos propios de este mágico lugar.</p>
+			<p>Se distingue además por su amplio Spa con tratamientos de belleza, terapéuticos y de relax.</p>
+			<p>En verano funciona el Restaurant del Bosque con un variado y tentador menú. Durante todo el año cuenta con bar, cafetería y room service.</p>
+			<p>¡La Mansión del Bosque es la mejor opción para disfrutar un lugar privilegiado como Mar de las Pampas sin sentirse tan lejos de casa!</p>
+			<p>¡Qué bueno que nos conozca ahora y nos tenga en cuenta todo el año!!!</p>
+		</div>
+	</section>
+
+	<section class="rooms">
+		<div class="container">
+			<div class="title">
+				<h2>Nuestras habitaciones y aparts</h2>
+			</div>
+			<div class="row">
+				<div class="col-sm-6">
+					<div class="rooms-item">
+						<img src="{{ asset('bundles/app/images/rooms/01.jpg') }}" alt="">
+						<div class="content">
+							<h3>Las Habitaciones</h3>
+							<p>TOdas las habitaciones estan rodeadas de bosque y su particular tranquilidad. Las habitaciones en planta baja tienen un deck privado y reposeras con salida al bosque. Las habitaciones en la planta alta tienen un balcon con vista al bosque.</p>
+							<a href="{{ path('habitaciones') }}">Ver más</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="rooms-item">
+						<img src="{{ asset('bundles/app/images/rooms/02.jpg') }}" alt="">
+						<div class="content">
+							<h3>Los Aparts</h3>
+							<p>Si quiere más intimidad... opte por los Aparts, concebidos para familias de dos, tres o cuatro personas...</p>
+							<a href="{{ path('aparts') }}">Ver más</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="spa">
+		<div class="container">
+			<div class="title">
+				<h2>Nuestro SPA</h2>
+			</div>
+			<p>En nuestro Spa... podes elegir distintos tratamientos de belleza y masajes terapéuticos, ducha escocesa, baño finlandés, jacuzzi con espuma y sales aromáticas. Está provisto de vestuarios con duchas, amenities y batas para su mayor confort.</p>
+			<p>En todos los tratamientos se utilizan las técnicas manuales realizadas por profesionales idóneos para brindar a nuestros huéspedes un encuentro con el bienestar del cuerpo y del espíritu, a través de nuestros tratamientos exclusivos de relax, rejuvenecimiento, belleza y anti-stress.</p>
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="spa-item">
+						<img src="{{ asset('bundles/app/images/spa/01.png') }}" alt="">
+						<h3>Piscina cubierta climatizada</h3>
+						<p>Sauna seco, Ducha escocesa, baño finlandes</p>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="spa-item">
+						<img src="{{ asset('bundles/app/images/spa/02.png') }}" alt="">
+						<h3>Tratamientos corporales</h3>
+						<p>* Servicio con costo adicional</p>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="spa-item">
+						<img src="{{ asset('bundles/app/images/spa/03.png') }}" alt="">
+						<h3>Tratamientos faciales</h3>
+						<p>* Servicio con costo adicional</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="spa-item">
+						<img src="{{ asset('bundles/app/images/spa/06.png') }}" alt="">
+						<h3>Masajes</h3>
+						<p>Piedras calientes, Reductor anticelulítico, Descontracturante, Masaje + drenaje linfático, Relajante, Reflexología, Reiki, Holístico, Antiestres</p>
+						<p>* Servicio con costo adicional</p>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="spa-item">
+						<img src="{{ asset('bundles/app/images/spa/04.png') }}" alt="">
+						<h3>Belleza de pies y manos</h3>
+						<p>* Servicio con costo adicional</p>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="spa-item">
+						<img src="{{ asset('bundles/app/images/spa/05.png') }}" alt="">
+						<h3>Ozonoterapia</h3>
+						<p>* Servicio con costo adicional</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section class="gallery" id="gallery">
+		<div class="container">
+			<div class="title">
+				<h2>Galería de fotos</h2>
+			  {{ render(controller('AppBundle:Default:galeria')) }}
+		  </div>
+		</div>
+	</section>
+
+	<section class="services" id="services">
+		<div class="container">
+			<div class="title">
+				<h2>Servicios incluidos</h2>
+			</div>
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="services-item">
+						<span class="icon-leaf"></span>
+						<h3>Desayuno buffet</h3>
+						<p>Con pastelería de elaboración artesanal, variedad de frutas, fiambres, panificados y demás delicias para empezar a disfrutar del día.</p>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="services-item">
+						<span class="icon-leaf"></span>
+						<h3>WiFI</h3>
+						<p>Internet WIfi en todo el complejo</p>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="services-item">
+						<span class="icon-leaf"></span>
+						<h3>Pileta</h3>
+						<p>Libre uso de la pileta climatizada cubierta</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="services-item">
+						<span class="icon-leaf"></span>
+						<h3>Circuito hídrico</h3>
+						<p>Sauna, ducha escosesa y finlandesa</p>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="services-item">
+						<span class="icon-leaf"></span>
+						<h3>Gimnasio</h3>
+						<p>Equipado con las mejores máquinas y todo lo que necesitás</p>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="services-item">
+						<span class="icon-leaf"></span>
+						<h3>Sala Relax</h3>
+						<p>Hermosa sala de relax con una increible vista al bosque</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="services-item">
+						<span class="icon-leaf"></span>
+						<h3>Bicicletas</h3>
+						<p>Tenemos bicicletas para que recorra la zona respirando el más puro de los aires</p>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="services-item">
+						<span class="icon-leaf"></span>
+						<h3>Sala de lectura y videoteca</h3>
+						<p>Equipada con todo lo que necesitás para pasar un rato de tranquilidad</p>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="services-item">
+						<span class="icon-leaf"></span>
+						<h3>Sala de juegos</h3>
+						<p>Con mesa de pool, mini-tejo y ping pong, juegos de mesa</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="services-item">
+						<span class="icon-leaf"></span>
+						<h3>Servicio de playa</h3>
+						<p>Reposeras y toallas en bolso playero</p>
+					</div>
+				</div>
+			</div>
+			<div class="title">
+				<h2 class="mt">Servicios con costo adicional</h2>
+			</div>
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="services-item">
+						<span class="icon-leaf"></span>
+						<h3>Masajes</h3>
+						<p>Servicio de masajes</p>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="services-item">
+						<span class="icon-leaf"></span>
+						<h3>Hidro</h3>
+						<p>Sesión de hidromasaje en el SPA</p>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="services-item">
+						<span class="icon-leaf"></span>
+						<h3>Tratamientos</h3>
+						<p>Tanto de belleza corporal como facial</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="services-item">
+						<span class="icon-leaf"></span>
+						<h3>Clases</h3>
+						<p>Clases personalizadas de Yoga o Pilates</p>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="services-item">
+						<span class="icon-leaf"></span>
+						<h3>Baby Sitter</h3>
+						<p>Cuidado de niños</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="map" id="ubicacion">
+		<div class="title">
+			<h2>Ubicación</h2>
+		</div>
+		<div id="map"></div>
+	</section>
+
+	<section class="contact" id="contacto">
+		<div class="container">
+			<div class="title">
+				<h2>Contacto</h2>
+			</div>
+			<div class="row">
+				<form  id="form_contacto" method="post" onsubmit="return validar_form();">
+				<div class="col-sm-6">
+					<input type="text" placeholder="Nombre y apellido" required="required" id="form_nombre">
+					<input type="email" placeholder="Mail" required="required" id="form_email">
+					<input type="text" placeholder="Teléfono" required="required" id="form_telefono">
+				</div>
+				<div class="col-sm-6">
+					<textarea placeholder="Mensaje" id="form_mensaje"></textarea>
+				</div>
+				<div class="col-sm-12 btn">
+					<a class="send">Enviar</a>
+					<div class="spinner" id="form_img_loading">
+						<div class="rect1"></div>
+						<div class="rect2"></div>
+						<div class="rect3"></div>
+						<div class="rect4"></div>
+						<div class="rect5"></div>
+					</div>
+				</div>
+				</form>
+			</div>
+		</div>
+	</section>
+{% endblock %}	
