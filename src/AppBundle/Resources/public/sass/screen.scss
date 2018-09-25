@@ -54,6 +54,7 @@ body {
 	background-color: #fff;
 	font-family: 'Ubuntu', sans-serif;
 	overflow-x: hidden;
+	&.noScroll {overflow-y: hidden;}
 }
 div {
 	margin: 0;
@@ -1574,6 +1575,22 @@ input[type="search"] {
 	display: flex;
 	align-items: center;
 }
+
+body {
+    &.noScroll {
+        .intro {
+            header {
+                .container {
+                    .hamburger {
+                        position: fixed;
+                        top: 50px;
+                    }
+                }
+            }
+        }
+    }
+}
+
 .intro {
 	position: relative;
 	.social-bar {

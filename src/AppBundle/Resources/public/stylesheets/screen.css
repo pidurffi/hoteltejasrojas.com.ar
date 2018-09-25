@@ -59,6 +59,8 @@ body {
   overflow-x: hidden;
 }
 
+body.noScroll {overflow-y: hidden;}
+
 /* line 58, ../sass/screen.scss */
 div {
   margin: 0;
@@ -2100,6 +2102,8 @@ input[type="search"]::-webkit-search-decoration {
   justify-content: space-between;
 }
 /* line 1663, ../sass/screen.scss */
+body.noScroll .intro header .container .hamburger {position: fixed; top: 50px;}
+
 .intro header .container .hamburger {
   visibility: hidden;
   opacity: 0;

@@ -14,3 +14,6 @@
 /vendor/
 /public_html/bundles/
 /public_html/uploads/
+/.settings/
+/.buildpath
+/.project
