@@ -2899,3 +2899,12 @@ body {
 		}
 	}
 }
+
+iframe {
+	display: block;
+	margin-bottom: 20px;
+	width: 100%;
+	@media (min-width: 768px) {
+		margin-bottom: 0;
+	}
+}

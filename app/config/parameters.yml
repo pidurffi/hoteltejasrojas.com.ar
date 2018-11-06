@@ -2,9 +2,9 @@
 parameters:
     database_host: 127.0.0.1
     database_port: null
-    database_name: web451_hoteltejasrojas
-    database_user: web451_hotelteja
-    database_password: V1pvVonoXSgt 
+    database_name: hoteltej_sitio2018
+    database_user: hoteltej_sitio20
+    database_password: SQYM82T3GKSE 
     mailer_transport: smtp
     mailer_host: mail.hoteltejasrojas.com.ar
     mailer_user: info+hoteltejasrojas.com.ar

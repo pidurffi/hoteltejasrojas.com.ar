@@ -2,8 +2,8 @@
 
 <html lang="en">
 
-<head>
-	<meta charset="UTF-8">
+<head><meta http-equiv="Content-Type" content="text/html; charset=gb18030">
+	
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Hotel Tejas Rojas - Frente al Mar - Villa Gesell</title>
 	<!-- CSS -->
@@ -151,7 +151,7 @@
 
 	<footer>
 		<div class="container">
-			<p class="copy">&copy; 2017 Mar de las pampas TRAVEL</p>
+			<p class="copy">&copy; 2018 Mar de las pampas TRAVEL</p>
 		</div>
 	</footer>
 
@@ -192,175 +192,4 @@
 
 </body>
 
-</html>{#
-
-<!DOCTYPE html>
-
-<html lang="en">
-
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>La Mansión del Bosque</title>
-	<!-- CSS -->
-	
-	<link href="{{ asset('bundles/app/stylesheets/screen.css') }}" media="screen, projection" rel="stylesheet" type="text/css" />
-	<link href="{{ asset('bundles/app/stylesheets/photoswipe.css') }}" media="screen, projection" rel="stylesheet" type="text/css" />
-	<link href="{{ asset('bundles/app/stylesheets/default-skin/default-skin.css') }}" media="screen, projection" rel="stylesheet" type="text/css" />
-	<link href="{{ asset('bundles/app/stylesheets/fonts.css') }}" media="screen, projection" rel="stylesheet" type="text/css" />
-	<link href="{{ asset('bundles/app/stylesheets/admin-v2.css') }}" media="screen, projection" rel="stylesheet" type="text/css" />
-	<!-- FONTS -->
-	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
-	<!-- JS -->
-	<script type="text/javascript" src="{{ asset('bundles/app/js/jquery-2.2.3.min.js') }}"></script>
-	<script type="text/javascript" src="{{ asset('bundles/app/js/scroll.js') }}"></script>
-	<script type="text/javascript" src="{{ asset('bundles/app/js/photoswipe.min.js') }}"></script>
-	<script type="text/javascript" src="{{ asset('bundles/app/js/photoswipe-ui-default.min.js') }}"></script>
-	<script type="text/javascript" src="{{ asset('bundles/app/js/functions.js') }}"></script>
-	<script type="text/javascript" src="{{ asset('bundles/app/js/contacto.js') }}"></script>
-	<script src="https://maps.googleapis.com/maps/api/js"></script>
-	<script>
-  function initialize() {
-	var isDraggable = $(document).width() > 480 ? true : false;  
-	var ispanControl = $(document).width() > 480 ? true : false;
-	var myLatLng = {lat: -37.323141, lng: -57.020792};
-	var marker = new google.maps.Marker({
-	   animation: google.maps.Animation.BOUNCE,
-	   position: myLatLng,
-	   title:"La Mansión del Bosque"
-	});
-	var mapCanvas = document.getElementById('map');
-	var mapOptions = {
-	  center: new google.maps.LatLng(-37.323141, -57.020792),
-	  zoom: 15,
-	  mapTypeControl: true,
-	  panControl:ispanControl,
-	  draggable: isDraggable,
-	  scaleControl: true,
-	  streetViewControl: true,
-	  rotateControl: true,
-	  scrollwheel: false,
-	  mapTypeId: google.maps.MapTypeId.SATELLITE
-	}
-	var map = new google.maps.Map(mapCanvas, mapOptions);
-	marker.setMap(map);
-  }
-  
-  google.maps.event.addDomListener(window, 'load', initialize);
-</script>
-</head>
-
-<body class="{% if app.request.attributes.get('_route') == 'homepage' %}home{% else %}int{% endif %}">
-
-	<header>
-		<div class="container">
-			<button class="hamburger hamburger--spin" type="button">
-				<span class="hamburger-box">
-					<span class="hamburger-inner"></span>
-				</span>
-			</button>
-			
-			<a href="/">
-				<h1 class="logo" title="La Mansión del Bosque">
-					La Mansión del Bosque
-				</h1>
-			</a>
-			
-			<div class="social">
-				<p>(02255) 47-9755 | 47-9655 | 47-9555</p>
-				<ul>
-					<li><a href=""><span class="icon-facebook"></span></a></li>
-					<li><a href=""><span class="icon-twitter"></span></a></li>
-					<li><a href=""><span class="icon-google"></span></a></li>
-				</ul>
-			</div>
-			
-			<nav>
-				<ul>
-					{% if app.request.attributes.get('_route') == 'homepage' %}
-					<li><a href="{{ path('habitaciones') }}">Habitaciones</a></li>
-					<li><a href="{{ path('aparts') }}">Los Aparts</a></li>
-					<li><a data-scroll href="#us">El complejo</a></li>
-					<li><a data-scroll href="#services">Servicios</a></li>
-                    <li><a data-scroll href="#gallery">Fotos</a></li>
-					<li><a data-scroll href="#ubicacion">Ubicacion</a></li>
-					<li><a data-scroll href="#contacto">Contacto</a></li>
-					{% else %}
-					<li><a href="{{ path('habitaciones') }}">Habitaciones</a></li>
-					<li><a href="{{ path('aparts') }}">Los Aparts</a></li>
-					<li><a href="{{ path('homepage')}}#us">El complejo</a></li>
-					<li><a href="{{ path('homepage')}}#services">Servicios</a></li>
-                    <li><a data-scroll href="#gallery">Fotos</a></li>
-					<li><a href="{{ path('homepage')}}#ubicacion">Ubicacion</a></li>
-					<li><a href="{{ path('homepage')}}#contacto">Contacto</a></li>
-					{% endif %}
-				</ul>
-			</nav>
-
-		</div>
-	</header>
-
-	{% block content %}
-	{% endblock %}
-
-	<footer>
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-6">
-					<span class="logo-footer">
-						<img src="{{ asset('bundles/app/images/logo-footer.png') }}" alt="">
-					</span>
-					<p>Hotel La Mansión del Bosque | Spa &amp; Resort<br>
-					Mar de las Pampas - Argentina<br>
-					(02255) 47-9755 | 47-9655 | 47-9555</p>
-				</div>
-				<div class="col-sm-6 rt">
-					<a href="mailto:info@lamansiondelbosque.com">info@lamansiondelbosque.com</a>
-					<ul>
-						<li><a href=""><span class="icon-facebook"></span></a></li>
-						<li><a href=""><span class="icon-twitter"></span></a></li>
-						<li><a href=""><span class="icon-google"></span></a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</footer>
-
-	<div tabindex="-1" role="dialog" aria-hidden="true" class="pswp">
-		<div class="pswp__bg"></div>
-		<div class="pswp__scroll-wrap">
-			<div class="pswp__container">
-				<div class="pswp__item"></div>
-				<div class="pswp__item"></div>
-				<div class="pswp__item"></div>
-			</div>
-			<div class="pswp__ui pswp__ui--hidden">
-				<div class="pswp__top-bar">
-					<div class="pswp__counter"></div>
-					<button title="Close (Esc)" class="pswp__button pswp__button--close"></button>
-					<button title="Share" class="pswp__button pswp__button--share"></button>
-					<button title="Toggle fullscreen" class="pswp__button pswp__button--fs"></button>
-					<button title="Zoom in/out" class="pswp__button pswp__button--zoom"></button>
-					<div class="pswp__preloader">
-						<div class="pswp__preloader__icn">
-							<div class="pswp__preloader__cut">
-								<div class="pswp__preloader__donut"></div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-					<div class="pswp__share-tooltip"></div>
-				</div>
-				<button title="Previous (arrow left)" class="pswp__button pswp__button--arrow--left"></button>
-				<button title="Next (arrow right)" class="pswp__button pswp__button--arrow--right"></button>
-				<div class="pswp__caption">
-					<div class="pswp__caption__center"></div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-</body>
-
-</html> #}
+</html>
