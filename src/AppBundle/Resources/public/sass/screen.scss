@@ -1870,7 +1870,11 @@ body {
 }
 .kindergarten {
 	padding: 40px 0;
-	background-color: #383338;
+	background: url(../images/kindergarten/background.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center center;
 	h2 {
 		margin-bottom: 40px;
 		font-size: 60px;
@@ -2907,4 +2911,9 @@ iframe {
 	@media (min-width: 768px) {
 		margin-bottom: 0;
 	}
+}
+
+video {
+	display: block;
+	width: 100%;
 }
