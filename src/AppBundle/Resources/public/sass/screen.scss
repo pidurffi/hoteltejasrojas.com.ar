@@ -1742,10 +1742,12 @@ body {
 	.slider {
 		.owl-controls {
 			position: absolute;
-			top: 300px;
+			bottom: 50px;
 			left: 50%;
-			margin-left: -585px;
 			width: 1170px;
+			text-align: center;
+			transform: translate(-50%, 0);
+			-webkit-transform: translate(-50%, 0);
 			.owl-page {
 				display: inline-block;
 				margin: 0 5px;
