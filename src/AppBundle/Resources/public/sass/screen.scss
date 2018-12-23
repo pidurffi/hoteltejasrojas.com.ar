@@ -1594,26 +1594,20 @@ body {
 .intro {
 	position: relative;
 	.social-bar {
-		height: 30px;
 		background-color: #fff;
 		ul {
+			display: flex;
+			align-items: center;
+			padding: 5px 0;
+			width: 100%;
 			li {
 				display: block;
 				float: right;
 				a {
 					display: block;
 					position: relative;
-					span {
-						padding: 0 10px;
-						font-size: 14px;
-						line-height: 30px;
+					i {
 						color: #b4aeb4;
-						border-style: solid;
-						border-color: #b4aeb4;
-						border-left-width: 1px;
-						-webkit-transition: color 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-						-o-transition: color 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-						transition: color 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 					}
 					p {
 						position: relative;
@@ -1629,8 +1623,8 @@ body {
 					}
 					&:before {
 						position: absolute;
-						top: 30px;
-						left: 7px;
+						top: 25px;
+						left: 0;
 						display: block;
 						content: '';
 						width: 0;
@@ -1642,7 +1636,7 @@ body {
 					}
 				}
 				&:first-child {
-					float: left;
+					margin-right: auto;
 					a {
 						span {
 							padding: 0;
@@ -1654,10 +1648,17 @@ body {
 						}
 					}
 				}
-				&:nth-child(2) {
+				&:nth-child(2), &:nth-child(3), &:nth-child(4), &:nth-child(5), &:nth-child(6) {
+					width: 30px;
+					text-align: center;
 					a {
-						span {
-							border-right-width: 1px;
+						&:before {
+							left: 4px;
+						}
+						&:hover {
+							i {
+								color: #e6606b;
+							}
 						}
 					}
 				}
@@ -1850,9 +1851,11 @@ body {
 		-moz-column-count: 3;
 		column-count: 3;
 		li {
+			display: flex;
+			align-items: center;
 			font-size: 16px;
 			line-height: 40px;
-			span {
+			i {
 				display: inline-block;
 				margin-right: 5px;
 				font-size: 20px;
